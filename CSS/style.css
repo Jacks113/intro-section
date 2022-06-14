@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
+
+nav{
+    width: 98%;
+}
+
+.navigation-container{
+    width: 99%;
+}
+
+.navigation-container, .members, .basics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.members, .basics{
+    list-style-type: none;
+}
+
+.members{
+    width: 10%;
+}
+
+.basics{
+    width: 30%;
+}
+
+
+
+header{
+    height: 5vh;
+    width: 100vw    ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
