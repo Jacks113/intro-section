@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="web page for a project challenge by frontend-mentor">
     <script src="./JS/script.js" defer></script>
     <link rel="stylesheet" href="./CSS/style.css">
+
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
 
     <title>Intro section</title>
 
@@ -18,15 +21,12 @@
         <nav>
             <ul class="navigation-container">
 
-           
-
-
                 <div class="basics">
                     <img src="./images/logo.svg" alt="logo"/>
-                    <li>Features</li>
-                    <li>Company</li>
-                    <li>Carees</li>
-                    <li>About</li>
+                    <li> Features <img src="./images/icon-arrow-down.svg"/> </li>
+                    <li> Company <img src="./images/icon-arrow-down.svg"/> </li>
+                    <li> Carees </li>
+                    <li> About </li>
                 </div>
                 
 
@@ -36,21 +36,49 @@
                 </div>
             </ul>
                 
+            <div class="drop-feature popUp hide">
+                <li> <img src="./images/icon-todo.svg" alt="todo icon"/> Todo List </li>
+                <li> <img src="./images/icon-calendar.svg" alt="calendar icon"/> Calendar </li>
+                <li> <img src="./images/icon-reminders.svg" alt="reminders icon"/> Reminders </li>
+                <li> <img src="./images/icon-planning.svg" alt="planning icon"/> Planning </li>
+            </div>
+            
+            <div class="company-feature popUp hide">
+                <li> History </li>
+                <li> Our Team </li>
+                <li> Blog </li>
+            </div>
         </nav>
     </header>
 
     <main>
 
+        <article class="remote-article">
+            <h1>Make remote work</h1>
+
+            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+            <div class="learn">Learn more</div>
+        </article>
+
+        <section class="remote-hero">
+            <figure>
+                <img src="images\image-hero-desktop.png" alt="hero-company"/>
+            </figure>
+        </section>
+
+        <aside class="products">
+            <figure class="products-image">
+                <img src="./images/client-databiz.svg" alt="maker databiz"/>
+                <img src="./images/client-audiophile.svg" alt="audiophile logo"/>
+                <img src="./images/client-meet.svg" alt="meet logo"/>
+                <img src="./images/client-maker.svg" alt="maker logo"/>
+            </figure>
+        </aside>
+
+
+
     </main>
 
-    <footer>
-
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://github.com/Jacks113">AH</a>.
-    </div>
-
-    </footer>
-
+    
 </body>
 </html>
