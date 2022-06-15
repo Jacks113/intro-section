@@ -24,6 +24,11 @@ body{
 
 nav{
     width: 98%;
+    height: 80%;
+    /* background-color: blue; */
+    position: relative;
+    bottom: 5%;
+    z-index: 50;
 }
 
 .navigation-container{
@@ -42,15 +47,29 @@ nav{
 }
 
 .members{
-    width: 10%;
+    width: 15%;
 }
+
+.members li{
+    border-radius: 3em;
+    padding:1em 3em;
+    cursor: pointer;
+}
+
 
 .basics{
     width: 30%;
 }
 
-.navigation-container li{
+.basics li{
     cursor: pointer;
+    /* background-color: orange; */
+    padding: 1em;
+    border: 3px solid  hsla(0, 0%, 8%, 0);
+}
+
+.members li:hover{
+    border: 3px solid  hsl(0, 0%, 8%);
 }
 
 .navigation-container li:hover{
@@ -60,7 +79,10 @@ nav{
 
 
 header{
-    height: 5vh;
+    position: relative;
+    top: 0vh;
+    /* background-color: yellow; */
+    height: 35vh;
     width: 100vw    ;
     display: flex;
     flex-direction: row;
