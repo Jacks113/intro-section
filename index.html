@@ -23,8 +23,8 @@
 
                 <div class="basics">
                     <img src="./images/logo.svg" alt="logo"/>
-                    <li> Features <img src="./images/icon-arrow-down.svg"/> </li>
-                    <li> Company <img src="./images/icon-arrow-down.svg"/> </li>
+                    <li id="features"> Features <img src="./images/icon-arrow-down.svg"/> </li>
+                    <li id="company"> Company <img src="./images/icon-arrow-down.svg"/> </li>
                     <li> Carees </li>
                     <li> About </li>
                 </div>
@@ -36,14 +36,14 @@
                 </div>
             </ul>
                 
-            <div class="drop-feature popUp hide">
+            <div id="hiddenFeatures" class="drop-feature popUp hide">
                 <li> <img src="./images/icon-todo.svg" alt="todo icon"/> Todo List </li>
                 <li> <img src="./images/icon-calendar.svg" alt="calendar icon"/> Calendar </li>
                 <li> <img src="./images/icon-reminders.svg" alt="reminders icon"/> Reminders </li>
                 <li> <img src="./images/icon-planning.svg" alt="planning icon"/> Planning </li>
             </div>
             
-            <div class="company-feature popUp hide">
+            <div id="hiddenCompany" class="company-feature popUp hide">
                 <li> History </li>
                 <li> Our Team </li>
                 <li> Blog </li>
@@ -53,27 +53,31 @@
 
     <main>
 
-        <article class="remote-article">
-            <h1>Make remote work</h1>
+        <section class="remote-article">
 
-            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-            <div class="learn">Learn more</div>
-        </article>
+            <article>
+                <h1>Make <br/> remote work</h1>
 
-        <section class="remote-hero">
-            <figure>
-                <img src="images\image-hero-desktop.png" alt="hero-company"/>
-            </figure>
-        </section>
+                <p>Get your team in sync, no matter your location. <br/> Streamline processes, create team rituals, and <br/> watch productivity soar.</p>
+                <div id="learn">Learn more</div>
+            </article>
+            
 
-        <aside class="products">
-            <figure class="products-image">
+
+            <aside class="products">
+
                 <img src="./images/client-databiz.svg" alt="maker databiz"/>
                 <img src="./images/client-audiophile.svg" alt="audiophile logo"/>
                 <img src="./images/client-meet.svg" alt="meet logo"/>
                 <img src="./images/client-maker.svg" alt="maker logo"/>
-            </figure>
         </aside>
+        </section>
+
+        <section class="remote-hero">
+ 
+        </section>
+
+
 
 
 
