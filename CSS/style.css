@@ -273,7 +273,7 @@ main{
 
     background-color: black;
     color: white;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     font-weight: 600;
     
     display: flex;
@@ -288,5 +288,29 @@ main{
     background-color: white;
     color: black;
 
-    border: 1px solid black;
+    border: 2px solid black;
+}
+
+@media only screen and (max-width:1400px){
+    header{
+        font-size: 14px;
+    }
+    
+    #learn{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    header{
+        font-size: 12px;
+    }
+    
+    
+}
+
+@media only screen and (max-width:1000px){
+    header{
+        font-size: 10px;
+    }
 }
