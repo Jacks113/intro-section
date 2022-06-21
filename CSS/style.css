@@ -375,7 +375,7 @@ main{
 }
 
 #learn:hover{
-    background-color: white;
+    background-color:  rgb(226, 221, 221);
     color: black;
 
     border: 2px solid black;
