@@ -381,6 +381,9 @@ main{
         grid-row: 5 / 11;
     }
 
+    #learn{
+        width: 70%;
+    }
 }
 
 
