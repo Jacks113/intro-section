@@ -14,7 +14,7 @@ body{
     font-family: 'Epilogue', sans-serif;
 
     height: auto;
-    background-color:  rgb(226, 221, 221);
+    background-color:  rgba(219, 219, 219, 54%);
     width: 99vw;
 
     overflow-x: hidden;
