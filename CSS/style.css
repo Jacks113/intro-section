@@ -376,15 +376,38 @@ main{
         font-size: 3em;
     }
 
+    .remote-hero {
+        background-position: center;
+        background-size: 100% 80%;
+    }
+
     .remote-article{
         grid-column: 2 / 10;
         grid-row: 5 / 11;
+
+        justify-content: space-evenly;
     }
 
     #learn{
         width: 70%;
     }
+
+    .products img{
+        width: 15%;
+    }
 }
+
+@media only screen and (max-width:600px){
+    .remote-article h1 {
+        font-size: 2.3em;
+    }
+
+    .remote-article article {
+        height: 60%;
+    }
+}
+
+
 
 
 @media only screen and (max-width:500px){
