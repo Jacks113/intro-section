@@ -1,24 +1,32 @@
 window.onload = function(e){
     const navFeatures = document.getElementById("features");
+
+    const featuresArrow = document.getElementById("features-arrow");
+    const companyArrow = document.getElementById("company-arrow");
+
     const navCompany = document.getElementById("company");
-    const hiddenCompany = document.getElementById("hiddenCompany");
-    const hiddenFeatures = document.getElementById("hiddenFeatures");
 
 
-    navFeatures.addEventListener("click", function(){
-        hiddenFeatures.classList.toggle("hide");
-        hiddenFeatures.classList.toggle("showFlex");
 
-        hiddenCompany.classList.add("hide");
-        hiddenCompany.classList.remove("showFlex");
+    navFeatures.addEventListener("mouseover", function(){
+        document.getElementById("features-arrow").src="/images/icon-arrow-up.svg";
+        document.getElementsByClassName("basics")[0].classList.remove("overflow-hide");
+    })
+    
+    navFeatures.addEventListener("mouseout", function(){
+        document.getElementById("features-arrow").src="/images/icon-arrow-down.svg";
+        document.getElementsByClassName("basics")[0].classList.add("overflow-hide");
+    })
+    
+    
+    navCompany.addEventListener("mouseover", function(){
+        document.getElementById("company-arrow").src="/images/icon-arrow-up.svg";
+        document.getElementsByClassName("basics")[0].classList.remove("overflow-hide");
+    })
+    
+    navCompany.addEventListener("mouseout", function(){
+        document.getElementById("company-arrow").src="/images/icon-arrow-down.svg";
+        document.getElementsByClassName("basics")[0].classList.add("overflow-hide");
     })
 
-    navCompany.addEventListener("click", function(){
-
-        hiddenFeatures.classList.add("hide");
-        hiddenFeatures.classList.remove("showFlex");
-
-        hiddenCompany.classList.toggle("hide");
-        hiddenCompany.classList.toggle("showFlex");
-    })
 }

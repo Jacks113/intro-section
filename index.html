@@ -21,11 +21,42 @@
         <nav>
             <ul class="navigation-container">
 
-                <div class="basics">
+                <div class="basics overflow-hide">
+
                     <img src="./images/logo.svg" alt="logo"/>
-                    <li id="features">
-                        <div> Features <img src="./images/icon-arrow-down.svg"/> </li>
-                    <li id="company"> Company <img src="./images/icon-arrow-down.svg"/> </li>
+                    
+                    <li id="features" class="dropdown">
+                        <button class="dropbtn">Features  <img id="features-arrow" src="./images/icon-arrow-down.svg"/></button>
+
+                        <div class="dropdown-content"> 
+                            <a href="#"><img src="./images/icon-todo.svg" alt="todo icon"/> Todo List</a>
+                        
+                            <a href="#"><img src="./images/icon-calendar.svg" alt="calendar icon"/> Calendar</a>
+                        
+                            <a href="#"><img src="./images/icon-reminders.svg" alt="reminders icon"/> Reminders</a>
+                        
+                            <a href="#"><img src="./images/icon-planning.svg" alt="planning icon"/> Planning</a>
+                        
+                        </div>   
+                    </li>
+                    
+                    <li id="company" class="dropdown"> 
+                        <button class="dropbtn"> Company 
+                            <img id="company-arrow" src="./images/icon-arrow-down.svg"/>
+                        </button> 
+                    
+                        <div class="dropdown-content"> 
+                            <a href="#"> History</a>
+                        
+                            <a href="#"> Our Company</a>
+                        
+                            <a href="#"> Blog</a>
+                        
+                        </div>
+
+                    
+                    </li>
+                    
                     <li> Carees </li>
                     <li> About </li>
                 </div>
@@ -37,18 +68,7 @@
                 </div>
             </ul>
                 
-            <div id="hiddenFeatures" class="drop-feature popUp hide">
-                <li> <img src="./images/icon-todo.svg" alt="todo icon"/> Todo List </li>
-                <li> <img src="./images/icon-calendar.svg" alt="calendar icon"/> Calendar </li>
-                <li> <img src="./images/icon-reminders.svg" alt="reminders icon"/> Reminders </li>
-                <li> <img src="./images/icon-planning.svg" alt="planning icon"/> Planning </li>
-            </div>
-            
-            <div id="hiddenCompany" class="company-feature popUp hide">
-                <li> History </li>
-                <li> Our Team </li>
-                <li> Blog </li>
-            </div>
+           
         </nav>
     </header>
 
@@ -57,12 +77,7 @@
         <section class="remote-article">
 
             <article>
-                <h1>
-                    <span class="wide">Make <br/> remote work
-                    </span>
-                    <span class="narrow">Make remote work
-                    </span>
-                </h1>
+                <h1>Make <br/> remote work</h1>
 
                 <p>Get your team in sync, no matter your location. <br/> Streamline processes, create team rituals, and <br/> watch productivity soar.</p>
                 <div id="learn">Learn more</div>
@@ -92,3 +107,12 @@
     
 </body>
 </html>
+
+
+
+<!-- 
+<div id="hiddenCompany" class="company-feature popUp hide">
+    <li> History </li>
+    <li> Our Team </li>
+    <li> Blog </li>
+</div> -->
