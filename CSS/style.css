@@ -219,6 +219,15 @@ main{
     font-weight: 600;
 }
 
+.wide{
+    display: inline;
+}
+
+.narrow{
+    display: none;
+}
+
+
 .remote-article p{
     font-size: 1.2em;
 
@@ -312,5 +321,67 @@ main{
 @media only screen and (max-width:1000px){
     header{
         font-size: 10px;
+        height: 100px;
     }
+
+    main{
+        top: 75px;
+        height: 1000px;
+
+        grid-template-rows: repeat(10, 100px);
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+
+    .wide{
+        display: none;
+    }
+
+    .narrow{
+        display: inline;
+    }
+
+    .remote-hero{
+        grid-column: 2 / 10;
+        grid-row: 1 / 5;
+    }
+
+    .remote-hero{
+        background-image: url("/images/image-hero-mobile.png");
+        background-size: 100% 100%;
+    }
+
+    .remote-article{
+        grid-column: 1 / 11;
+        grid-row: 5 / 11;
+    }
+
+    .remote-article article{
+        align-items: center;
+        width: 98%;
+    }
+
+    .remote-article h1{
+        text-align: center;
+    }
+
+
+    #learn{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .remote-article h1{
+        font-size: 3em;
+    }
+
+}
+
+
+@media only screen and (max-width:500px){
+    .remote-article h1{
+        font-size: 2em;
+    }
+
 }
