@@ -376,6 +376,11 @@ main{
         font-size: 3em;
     }
 
+    .remote-article{
+        grid-column: 2 / 10;
+        grid-row: 5 / 11;
+    }
+
 }
 
 
