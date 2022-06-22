@@ -470,18 +470,24 @@ main{
         right: 0px;
         top: 0%;
 
-        width: 50vw;
+        width: 100vw;
         
-        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0.57);
     }
     
     nav{
+        width: 50%;
         height: 100%;
+
         background-color: white;
+
+        position: absolute;
+        right: 0;
     }
 
     .navigation-container{
         position: absolute;
+        background-color: white;
         top: 5%;
         
         height: 80%;
@@ -489,6 +495,9 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+
+
        
     }
 
