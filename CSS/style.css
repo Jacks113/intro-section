@@ -458,9 +458,15 @@ main{
 }
 
 @media only screen and (max-width:700px){
+
     .logo{
         display: none;
     }
+
+    .header-hidden{
+        background-color: transparent;
+    }
+
 
     header{
         height: 100vh;
@@ -561,7 +567,7 @@ main{
 
     .members li{
         height: 20%;
-        padding: 5% 1.5em 0 1.5em;
+        padding: 10% 1.5em 0 1.5em;
     }
 
     .basics li, .members li{
