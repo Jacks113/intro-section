@@ -566,8 +566,8 @@ main{
     }
 
     .members li{
-        height: 20%;
-        padding: 10% 1.5em 0 1.5em;
+        height: 35%;
+        /* padding: 10% 1.5em 0 1.5em; */
     }
 
     .basics li, .members li{
