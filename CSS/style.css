@@ -76,7 +76,7 @@ header{
 
     /* background-color: blue; */
 
-    z-index: 100;
+    z-index: 200;
 
     position: absolute;
     
@@ -529,6 +529,10 @@ main{
 
         }
 
+        .menu-open{
+            position: fixed;
+        }
+
         .menu-open span:nth-child(1){
             transform: translateX(6%) translateY(232%) rotate(45deg);
             transition: ease-in-out 500ms all;
@@ -536,7 +540,7 @@ main{
 
         .menu-open span:nth-child(2){
                     transition: ease-in-out 500ms all;
-                    margin-left: 200%;
+                    margin-left: 250%;
         }
         
         .menu-open span:nth-child(3){
