@@ -40,10 +40,7 @@ window.onload = function(e){
     document.getElementById("learn").addEventListener("click", function(){
         window.location.href='#';
     })
-    
-    document.getElementById("learn").addEventListener("click", function(){
-        window.location.href='#';
-    })
+
     
     document.getElementsByClassName("header-logo")[0].addEventListener("click", function(){
         window.location.href='';
