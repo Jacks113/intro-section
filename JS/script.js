@@ -6,7 +6,15 @@ window.onload = function(e){
 
     const navCompany = document.getElementById("company");
 
-    
+    window.addEventListener("resize", function(){
+
+        if (window.innerWidth < 700){
+            this.document.getElementById("features").addEventListener("click", function(){
+                alert("Clicked features")
+            })
+        }
+       
+    })
 
 
     navFeatures.addEventListener("mouseover", function(){
@@ -35,5 +43,5 @@ window.onload = function(e){
 function changeNav(){
         document.getElementById("header").classList.toggle("header-hidden");
         document.getElementById("menu").classList.toggle("menu-open");
-    }
+}
 

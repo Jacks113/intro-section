@@ -130,9 +130,44 @@ nav{
     cursor: pointer;
 }
 
+@media (hover: hover){
 .navigation-container li:hover{
     color: hsl(0, 0%, 8%);
 }
+
+    .dropdown:hover .basics{
+        overflow: auto;
+    }
+
+
+    #learn:hover{
+        background-color:  rgb(226, 221, 221);
+        color: black;
+
+        border: 2px solid black;
+    }
+
+    .members li:nth-of-type(2):hover{
+        border: 3px solid hsla(0, 0%, 8% ,1);
+    }
+
+    .dropdown-content a:hover{
+        color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: flex;   
+    }   
+
+    .dropdown:hover .dropbtn {
+        color: black;
+    } 
+
+
+
+
+}
+
 
 
 .basics {
@@ -157,11 +192,7 @@ nav{
 
 
 /* DROPDOWN MENU */
-    .dropdown:hover .basics{
-        overflow: auto;
-    }
-
-
+ 
 
     .dropbtn {
         font-size: 1em;
@@ -217,13 +248,7 @@ nav{
     text-align: left;
     }
 
-    .dropdown:hover .dropdown-content {
-    display: flex;   
-    }   
 
-    .dropdown:hover .dropbtn {
-        color: black;
-    } 
   
 
     .overflow-show{
@@ -235,9 +260,7 @@ nav{
     }
 
 
-    .dropdown-content a:hover{
-        color: black;
-    }
+ 
 /* -------------- */
 
 
@@ -255,11 +278,6 @@ nav{
     width: 49%;
      
     text-align: center;
-}
-
-.members li:nth-of-type(2):hover{
-    border: 3px solid hsla(0, 0%, 8% ,1);
-
 }
 
 .members{
@@ -404,13 +422,6 @@ main{
     align-items: center;
 
     border-radius: 1em;
-}
-
-#learn:hover{
-    background-color:  rgb(226, 221, 221);
-    color: black;
-
-    border: 2px solid black;
 }
 
 @media only screen and (max-width:1400px){
@@ -717,13 +728,21 @@ main{
 
 @media only screen and (max-width:400px){
 
+    body{
+        font-size: 16px;
+    }
+
+    header{
+        font-size: 9px;
+    }
+
     .menu{
         width: 30px;
         height: 30px;
     }
 
     .menu span{
-        height: 20px;
+        width: 30px;
         height: 3px;
     }
 
