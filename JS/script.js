@@ -8,10 +8,8 @@ window.onload = function(e){
 
     window.addEventListener("resize", function(){
 
-        if (window.innerWidth < 700){
-            this.document.getElementById("features").addEventListener("click", function(){
-                alert("Clicked features")
-            })
+        if (window.matchMedia("(min-width: 700px)").matches){
+                console.log("Win size 700px");
         }
        
     })
@@ -36,6 +34,23 @@ window.onload = function(e){
     navCompany.addEventListener("mouseout", function(){
         document.getElementById("company-arrow").src="/images/icon-arrow-down.svg";
         document.getElementsByClassName("basics")[0].classList.add("overflow-hide");
+    })
+
+
+    document.getElementById("learn").addEventListener("click", function(){
+        window.location.href='#';
+    })
+    
+    document.getElementById("learn").addEventListener("click", function(){
+        window.location.href='#';
+    })
+    
+    document.getElementsByClassName("header-logo")[0].addEventListener("click", function(){
+        window.location.href='';
+    })
+    
+    document.getElementsByClassName("logo")[0].addEventListener("click", function(){
+        window.location.href='';
     })
     
 }

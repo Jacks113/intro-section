@@ -32,6 +32,9 @@ body{
     display: none;
 }
 
+.header-logo{
+    cursor: pointer;
+}
 
 
 .showFlex{
