@@ -31,6 +31,13 @@ body{
 
 /* HEADER / NAV STYLES */
 
+
+.hide{
+    display: none;
+}
+
+
+
 header{
     height: 300px;
     width: 100%;
@@ -39,6 +46,35 @@ header{
 
     position: absolute;
     top: 5px;
+    z-index: 100;
+}
+
+.menu{
+    width: 50px;
+    height: 50px;
+    
+    top: 10px;
+    right: 40px;
+
+    /* background-color: blue; */
+
+    position: absolute;
+    
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.menu span{
+    width: 40px;
+    height: 5px;
+
+    background-color: black;
+
+    display: inline-block;
+    
     z-index: 100;
 }
 
@@ -106,7 +142,7 @@ nav{
 
 
     .dropbtn {
-        font-size: 18px;
+        font-size: 1em;
         font-family: 'Epilogue', sans-serif;
         color: hsl(0, 0%, 41%);
         cursor: pointer;
@@ -223,22 +259,6 @@ nav{
 
 /* navigation drop menus */
 
-.popUp{
-
-    background-color: white;
-    position: relative;
-
-
-    width: 10%;
-    height: 50%;
-
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-    border-radius: 1em;
-
-}
 
 .drop-feature {
     top: -250px;
@@ -248,28 +268,6 @@ nav{
 .company-feature {
     top: -250px;
     left: 19%;
-}
-
-
-.popUp li{
-    width: 80%;
-    list-style-type: none;
-    
-    display: flex;
-    flex-direction: row;
-
-    justify-content: flex-start;
-    align-items:flex-start;
-
-    cursor: pointer;
-
-}
-
-.popUp li img{
-    width: 10%;
-    height: 70%;
-
-    margin-right: 1em;
 }
 
 
@@ -407,7 +405,7 @@ main{
 @media only screen and (max-width:1000px){
     header{
         font-size: 10px;
-        height: 100px;
+        height: 200px;
     }
 
     main{
@@ -480,6 +478,10 @@ main{
 
     .products img{
         width: 15%;
+    }
+
+    .menu{
+        display: flex;
     }
 }
 
