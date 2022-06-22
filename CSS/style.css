@@ -15,7 +15,7 @@ body{
 
     height: auto;
     width: 99vw;
-    min-width: 300px;
+    /* min-width: 300px; */
 
     background-color:  rgba(219, 219, 219, 54%);
 
