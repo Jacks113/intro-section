@@ -22,6 +22,17 @@ body{
     overflow-x: hidden;
 }
 
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    width: 75px;
+
+    display: none;
+}
+
+
 
 .showFlex{
     display: flex;
@@ -49,6 +60,8 @@ header{
     position: absolute;
     top: 5px;
     z-index: 100;
+
+    
 }
 
 .menu{
@@ -58,7 +71,12 @@ header{
     top: 10px;
     right: 10px;
 
+    cursor: pointer;
+
+
     /* background-color: blue; */
+
+    z-index: 100;
 
     position: absolute;
     
@@ -66,6 +84,8 @@ header{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+
+    overflow: hidden;
 }
 
 
@@ -460,13 +480,15 @@ main{
 @media only screen and (max-width:700px){
 
     .logo{
+        display: inline-block;
+    }
+
+    .header-logo{
         display: none;
     }
 
     .header-hidden{
         background-color: transparent;
-
-        
     }
 
     .header-hidden nav{
@@ -486,6 +508,7 @@ main{
         width: 100vw;
         
         background-color: rgba(0, 0, 0, 0.57);
+        transition: ease-in-out 500ms;
     }
     
     nav{
@@ -496,7 +519,34 @@ main{
 
         position: absolute;
         right: 0;
-    }
+
+        }
+
+        
+
+        .menu-open span:nth-child(1){
+            transform: translateX(6%) translateY(232%) rotate(45deg);
+            transition: ease-in-out 500ms all;
+        }
+
+        .menu-open span:nth-child(2){
+                    transition: ease-in-out 500ms all;
+                    margin-left: 200%;
+        }
+        
+        .menu-open span:nth-child(3){
+            transform: translateX(-1%) translateY(-305%) rotate(-45deg);
+            transition: ease-in-out 500ms all;
+        }
+        
+       
+
+
+
+        }
+
+
+
 
     .navigation-container{
         position: absolute;
@@ -597,6 +647,7 @@ main{
     
 
     main{
+        min-height: 500px;
         top: 0;
     }
 
@@ -628,10 +679,9 @@ main{
 
     .menu{
         display: flex;
+        transition: ease-in-out 2s all;
     }
 
-
-}
 
 @media only screen and (max-width:600px){
     .remote-article h1 {

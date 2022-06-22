@@ -6,6 +6,7 @@ window.onload = function(e){
 
     const navCompany = document.getElementById("company");
 
+    
 
 
     navFeatures.addEventListener("mouseover", function(){
@@ -28,5 +29,11 @@ window.onload = function(e){
         document.getElementById("company-arrow").src="/images/icon-arrow-down.svg";
         document.getElementsByClassName("basics")[0].classList.add("overflow-hide");
     })
-
+    
 }
+
+function changeNav(){
+        document.getElementById("header").classList.toggle("header-hidden");
+        document.getElementById("menu").classList.toggle("menu-open");
+    }
+

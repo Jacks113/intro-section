@@ -16,9 +16,11 @@
 </head>
 
 <body>
+
+    <img src="./images/logo.svg" class="logo" alt="logo"/>
     
-    <header>
-        <div class="menu">
+    <header id="header" class="header-hidden">
+        <div class="menu" id="menu" onclick="changeNav()">
             <span></span>
             <span></span>
             <span></span>
@@ -28,7 +30,7 @@
 
                 <div class="basics overflow-hide">
 
-                    <img src="./images/logo.svg" class="logo" alt="logo"/>
+                    <img src="./images/logo.svg" class="header-logo" alt="logo"/>
                     
                     <li id="features" class="dropdown">
                         <button class="dropbtn">Features  <img id="features-arrow" src="./images/icon-arrow-down.svg"/></button>
