@@ -353,6 +353,13 @@ main{
 }
 
 
+.remote-article article h1:first-of-type{
+    display: inline-block;
+}
+.remote-article article h1:nth-of-type(2){
+    display: none;
+}
+
 .products{
     width: 99%;
 
@@ -643,6 +650,12 @@ main{
         top: 0;
     }
 
+    .remote-article article h1:first-of-type{
+        display: none;
+    }
+    .remote-article article h1:nth-of-type(2){
+        display: inline-block;
+    }
     
 
     .remote-article h1{
@@ -656,7 +669,7 @@ main{
 
     .remote-article{
         grid-column: 2 / 10;
-        grid-row: 5 / 11;
+        grid-row: 4 / 11;
 
         justify-content: space-evenly;
     }
@@ -699,9 +712,6 @@ main{
 
 
 @media only screen and (max-width:400px){
-    header{
-        width: 50vw;
-    }
 
     .menu{
         width: 30px;
@@ -713,4 +723,7 @@ main{
         height: 3px;
     }
 
+    .remote-article h1 {
+        font-size: 1.4em;
+    }
 }
