@@ -7,6 +7,8 @@ window.onload = function(e){
     const navCompany = document.getElementById("company");
 
 
+
+
      // functions for adding and removing hover for features
 
      const addHoverNavFeat = function(){
@@ -141,6 +143,7 @@ window.onload = function(e){
     navCompany.addEventListener("mouseover", addHoverCompany);
 
     // window resize
+        onResize();
         window.onresize = onResize;
     }
     
