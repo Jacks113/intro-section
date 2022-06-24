@@ -25,11 +25,15 @@ window.onload = function(e){
         document.getElementsByClassName("basics")[0].classList.toggle("overflow-hide");
 
         if(document.getElementById("basics").classList.contains ("overflow-hide")) {
+            document.getElementsByClassName("navigation-container")[0].style.height="30%";
+
             document.getElementById("features-drop").style.display="none";
             document.getElementById("features-arrow").src="/images/icon-arrow-down.svg";
         }
 
         else {
+            document.getElementsByClassName("navigation-container")[0].style.height="80%";
+
             document.getElementById("features-drop").style.display="flex";
             document.getElementById("features-arrow").src="/images/icon-arrow-up.svg";
 
@@ -40,11 +44,15 @@ window.onload = function(e){
         document.getElementsByClassName("basics")[0].classList.toggle("overflow-hide");
 
         if(document.getElementById("basics").classList.contains ("overflow-hide")) {
+            document.getElementsByClassName("navigation-container")[0].style.height="30%";
+
             document.getElementById("company-drop").style.display="none";
             document.getElementById("company-arrow").src="/images/icon-arrow-down.svg";
         }
 
         else {
+            document.getElementsByClassName("navigation-container")[0].style.height="80%";
+
             document.getElementById("company-drop").style.display="flex";
             document.getElementById("company-arrow").src="/images/icon-arrow-up.svg";
         }        
@@ -98,6 +106,7 @@ window.onload = function(e){
 
 
                 navFeatures.addEventListener("click", addHoverNavFeat2);
+                navCompany.addEventListener("click", addHoverCompany2);
 
 
 
