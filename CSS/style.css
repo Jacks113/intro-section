@@ -540,14 +540,7 @@ s
 
 @media only screen and (max-width:700px){
 
-    header{
-        pointer-events: none;
-    }
 
-    .navigation-container {
-        font-size: 1.2em;
-        pointer-events: all;
-    }
 
     .logo{
         display: inline-block;
@@ -568,6 +561,8 @@ s
 
 
     header{
+        pointer-events: none;
+
         height: 100vh;
 
         position: fixed;
@@ -615,6 +610,9 @@ s
 
 
     .navigation-container{
+        font-size: 1.2em;
+        pointer-events: all;
+
         position: absolute;
         background-color: white;
         top: 10%;
@@ -624,10 +622,10 @@ s
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+    }
 
-
-
-       
+    .navigation-container a{
+        z-index: 300;
     }
 
 
