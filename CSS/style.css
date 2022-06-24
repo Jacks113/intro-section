@@ -158,9 +158,10 @@ nav{
         color: black;
     }
 
+/* 
     .dropdown:hover .dropdown-content {
         display: flex;   
-    }   
+    }    */
 
     .dropdown:hover .dropbtn {
         color: black;
@@ -220,10 +221,11 @@ nav{
         transition: all 1s ease-in;
 
         background-color: white;
-        display: none;
         position: absolute;
         min-width: 160px;
         z-index: 1;
+
+        display: none;
 
         margin-top: 1em;
         height: 140px;
@@ -606,6 +608,13 @@ main{
         height: 20%;
     }
 
+    .dropdown-none{
+        display: none;
+    }
+
+    .dropdown-show{
+        display: flex;
+    }
 
     .dropdown-content{
         position: relative;
