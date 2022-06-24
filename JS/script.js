@@ -55,7 +55,7 @@ window.onload = function(e){
 
         //  function for changing event listener based on window size
         const onResize = function(){
-            console.log(window.innerWidth);
+            // console.log(window.innerWidth);
 
             // removing event listeners for hover on features and company in navigation if under 1000px
 
@@ -65,6 +65,10 @@ window.onload = function(e){
 
                 navCompany.removeEventListener("mouseout", removeHoverCompany);
                 navCompany.removeEventListener("mouseover", addHoverCompany);
+
+                document.getElementById("learn").addEventListener("click", function(){
+                    window.location.href="#";
+                })
             }
 
 
