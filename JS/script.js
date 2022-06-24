@@ -59,16 +59,26 @@ window.onload = function(e){
 
             // removing event listeners for hover on features and company in navigation if under 1000px
 
-            if (window.innerWidth < 1000){
+            if (window.innerWidth <= 700){
                 navFeatures.removeEventListener("mouseover", addHoverNavFeat);
                 navFeatures.removeEventListener("mouseout", removeHoverNavFeat);
 
                 navCompany.removeEventListener("mouseout", removeHoverCompany);
                 navCompany.removeEventListener("mouseover", addHoverCompany);
             }
-    }
-    
 
+
+            else if (window.innerWidth > 700){
+                navFeatures.addEventListener("mouseover", addHoverNavFeat);
+                navFeatures.addEventListener("mouseout", removeHoverNavFeat);
+
+                navCompany.addEventListener("mouseout", removeHoverCompany);
+                navCompany.addEventListener("mouseover", addHoverCompany);
+            }
+
+            
+            }
+            
     // adding event listeners for hover on features and company in navigation
     navFeatures.addEventListener("mouseover", addHoverNavFeat);
     navFeatures.addEventListener("mouseout", removeHoverNavFeat);
@@ -78,8 +88,10 @@ window.onload = function(e){
 
     // window resize
         window.onresize = onResize;
+    }
+    
 
-}
+    
 
 function changeNav(){
         document.getElementById("header").classList.toggle("header-hidden");
