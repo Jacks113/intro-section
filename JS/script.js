@@ -69,6 +69,12 @@ window.onload = function(e){
                 document.getElementById("learn").addEventListener("click", function(){
                     window.location.href="#";
                 })
+                document.getElementById("register").addEventListener("click", function(){
+                    window.location.href="#";
+                })
+                document.getElementById("login").addEventListener("click", function(){
+                    window.location.href="#";
+                })
             }
 
 
