@@ -136,6 +136,7 @@ nav{
 
 .navigation-container li a {
     color: hsl(0, 0%, 41%);
+    text-decoration: none;
 }
 
 @media (hover: hover){
@@ -163,6 +164,9 @@ nav{
         color: black;
     }
 
+    .navigation-container li a:hover{
+        color: black;
+    }
 /* 
     .dropdown:hover .dropdown-content {
         display: flex;   
@@ -522,6 +526,10 @@ main{
 
     .members{
         width: 30%;
+    }
+
+    #register:active{
+        border: 2px solid black;
     }
 
 }
