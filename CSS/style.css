@@ -647,11 +647,14 @@ s
 
     .basics {
         /* background-color: blueviolet; */
-        height: 30%;
+        height: auto;
 
         flex-direction: column;
         align-items: flex-start;
         justify-content:space-between;
+
+        position: absolute;
+        top: 0;
     }
 
     .basics-show{
@@ -694,8 +697,15 @@ s
     }
 
     #features, #company{
-        height: auto;
+        height: 20%;
+        transition: 1s ease-in-out all;
     }
+    
+    #features a, #company a{
+       font-size: 1em;
+    }
+
+
     
 
     .basics, .members{
@@ -716,6 +726,7 @@ s
     .basics li{
         padding: 0 1.5em;
         width: 99%;
+        margin-bottom: 5%;
     }
 
     .members li{
