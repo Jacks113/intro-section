@@ -626,6 +626,7 @@ s
 
     .navigation-container a{
         z-index: 300;
+        user-select: none;
     }
 
 
