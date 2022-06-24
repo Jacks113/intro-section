@@ -546,6 +546,7 @@ s
 
     .navigation-container {
         font-size: 1.2em;
+        pointer-events: all;
     }
 
     .logo{
