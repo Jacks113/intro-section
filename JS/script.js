@@ -24,13 +24,20 @@ window.onload = function(e){
     
     const addHoverNavFeat2 = function(){
 
-        document.getElementsByClassName("basics")[0].classList.toggle("overflow-hide");
+        navFeatures.classList.toggle("control");
 
-        if(document.getElementById("basics").classList.contains ("overflow-hide")) {
+        if(!(navFeatures.classList.contains ("control"))) {
             document.getElementsByClassName("navigation-container")[0].style.height="50%";
 
             document.getElementById("features").style.height="20%";
+
             document.getElementById("company").style.height="20%";
+            document.getElementById("company-drop").style.display="none";
+            document.getElementById("company-arrow").src="/images/icon-arrow-down.svg";
+            if (!(navCompany.classList.contains("control"))){navCompany.classList.toggle("control")}
+
+
+
 
             document.getElementById("features-drop").style.display="none";
             document.getElementById("features-arrow").src="/images/icon-arrow-down.svg";
@@ -40,7 +47,13 @@ window.onload = function(e){
             document.getElementsByClassName("navigation-container")[0].style.height="80%";
             
             document.getElementById("features").style.height="70%";
+
+            document.getElementById("company-drop").style.display="none";
             document.getElementById("company").style.height="20%";
+            document.getElementById("company-arrow").src="/images/icon-arrow-down.svg";
+            if (navCompany.classList.contains("control")){navCompany.classList.toggle("control")}
+
+
 
             document.getElementById("features-drop").style.display="flex";
             document.getElementById("features-arrow").src="/images/icon-arrow-up.svg";
@@ -49,13 +62,18 @@ window.onload = function(e){
     }
     const addHoverCompany2 = function(){
 
-        document.getElementsByClassName("basics")[0].classList.toggle("overflow-hide");
+        navCompany.classList.toggle("control");
 
-        if(document.getElementById("basics").classList.contains ("overflow-hide")) {
+        if(!(navCompany.classList.contains ("control"))) {
             document.getElementsByClassName("navigation-container")[0].style.height="50%";
 
             document.getElementById("company").style.height="20%";
+
+            document.getElementById("features-drop").style.display="none";
             document.getElementById("features").style.height="20%";
+            document.getElementById("features-arrow").src="/images/icon-arrow-down.svg";
+            if (navFeatures.classList.contains("control")){navFeatures.classList.toggle("control")}
+
 
             document.getElementById("company-drop").style.display="none";
             document.getElementById("company-arrow").src="/images/icon-arrow-down.svg";
@@ -65,7 +83,13 @@ window.onload = function(e){
             document.getElementsByClassName("navigation-container")[0].style.height="80%";
             
             document.getElementById("company").style.height="70%";
+
             document.getElementById("features").style.height="20%";
+            document.getElementById("features-drop").style.display="none";
+            document.getElementById("features-arrow").src="/images/icon-arrow-down.svg";
+            if (navFeatures.classList.contains("control")){navFeatures.classList.toggle("control")}
+
+
 
             document.getElementById("company-drop").style.display="flex";
             document.getElementById("company-arrow").src="/images/icon-arrow-up.svg";
