@@ -385,11 +385,11 @@ main{
 }
 
 
-.remote-article article h1:first-of-type{
-    display: inline-block;
-}
-.remote-article article h1:nth-of-type(2){
+.header-first{
     display: none;
+}
+.header-second{
+    display: inline-block;
 }
 
 .products{
@@ -751,12 +751,12 @@ s
         top: 0;
     }
 
-    .remote-article article h1:first-of-type{
-        display: none;
-    }
-    .remote-article article h1:nth-of-type(2){
-        display: inline-block;
-    }
+.header-first{
+    display: inline-block;
+}
+.header-second{
+   display: none; 
+}
     
 
     .remote-article h1{
