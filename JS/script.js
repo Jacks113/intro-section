@@ -21,23 +21,14 @@ window.onload = function(e){
 
        
     }
+
+    // functions for dropdown menu in responsive/mobile screen size for features
     
     const addHoverNavFeat2 = function(){
-
-        navFeatures.classList.toggle("control");
-
-        if(!(navFeatures.classList.contains ("control"))) {
+        if((navFeatures.classList.contains ("control"))) {
             document.getElementsByClassName("navigation-container")[0].style.height="50%";
 
             document.getElementById("features").style.height="20%";
-
-            document.getElementById("company").style.height="20%";
-            document.getElementById("company-drop").style.display="none";
-            document.getElementById("company-arrow").src="/images/icon-arrow-down.svg";
-            if (!(navCompany.classList.contains("control"))){navCompany.classList.toggle("control")}
-
-
-
 
             document.getElementById("features-drop").style.display="none";
             document.getElementById("features-arrow").src="/images/icon-arrow-down.svg";
@@ -48,32 +39,35 @@ window.onload = function(e){
             
             document.getElementById("features").style.height="70%";
 
-            document.getElementById("company-drop").style.display="none";
             document.getElementById("company").style.height="20%";
+            document.getElementById("company-drop").style.display="none";
             document.getElementById("company-arrow").src="/images/icon-arrow-down.svg";
-            if (navCompany.classList.contains("control")){navCompany.classList.toggle("control")}
-
-
 
             document.getElementById("features-drop").style.display="flex";
             document.getElementById("features-arrow").src="/images/icon-arrow-up.svg";
+        }       
 
-        }        
+        if(navCompany.classList.contains("control")){
+            document.getElementById("company").style.height="20%";
+            document.getElementById("company-arrow").src="/images/icon-arrow-down.svg";
+            document.getElementById("company-drop").style.display="none";
+            navCompany.classList.remove("control");
+        };
+        
+        navFeatures.classList.toggle("control");    
+
+
     }
+
+    // functions for dropdown menu in responsive/mobile screen size for company
+
     const addHoverCompany2 = function(){
 
-        navCompany.classList.toggle("control");
 
-        if(!(navCompany.classList.contains ("control"))) {
+        if((navCompany.classList.contains ("control"))) {
             document.getElementsByClassName("navigation-container")[0].style.height="50%";
 
             document.getElementById("company").style.height="20%";
-
-            document.getElementById("features-drop").style.display="none";
-            document.getElementById("features").style.height="20%";
-            document.getElementById("features-arrow").src="/images/icon-arrow-down.svg";
-            if (navFeatures.classList.contains("control")){navFeatures.classList.toggle("control")}
-
 
             document.getElementById("company-drop").style.display="none";
             document.getElementById("company-arrow").src="/images/icon-arrow-down.svg";
@@ -87,14 +81,23 @@ window.onload = function(e){
             document.getElementById("features").style.height="20%";
             document.getElementById("features-drop").style.display="none";
             document.getElementById("features-arrow").src="/images/icon-arrow-down.svg";
-            if (navFeatures.classList.contains("control")){navFeatures.classList.toggle("control")}
-
-
 
             document.getElementById("company-drop").style.display="flex";
             document.getElementById("company-arrow").src="/images/icon-arrow-up.svg";
-        }        
+        }       
+
+        if(navFeatures.classList.contains("control")){
+            document.getElementById("features").style.height="20%";
+            document.getElementById("features-arrow").src="/images/icon-arrow-down.svg";
+            document.getElementById("features-drop").style.display="none";
+
+            navFeatures.classList.remove("control");
+        };
+        
+        navCompany.classList.toggle("control");
     }
+
+    // function for hiding dropdown menu for features
         
     const removeHoverNavFeat = function(){
         document.getElementById("features-arrow").src="/images/icon-arrow-down.svg";
@@ -118,7 +121,7 @@ window.onload = function(e){
             document.getElementById("company-drop").classList.add("dropdown-show");
             }
 
-
+    // functions hiding dropdown menu for company
         const removeHoverCompany = function(){
             document.getElementById("company-arrow").src="/images/icon-arrow-down.svg";
         
