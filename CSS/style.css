@@ -133,6 +133,18 @@ nav{
     cursor: pointer;
 }
 
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+
+a:hover{
+    color: black;
+}
+
+a:active{
+    color: black;
+}
 
 .navigation-container li a {
     color: hsl(0, 0%, 41%);
@@ -197,7 +209,7 @@ nav{
     align-items: center;
 }
 
-.basics li{
+.basics >.list-item, .basics li{
     padding: 1.5em;
     width: 22%;
     text-align: center;
@@ -350,7 +362,7 @@ main{
     justify-content: space-between;
 }
 
-.remote-article h1{
+.remote-article h1, h2{
     font-size: 4em;
     width: 100%;
 
@@ -508,7 +520,7 @@ main{
         width: 98%;
     }
 
-    .remote-article h1{
+    .remote-article h1, h2{
         text-align: center;
     }
 
@@ -546,7 +558,7 @@ s
         font-size: 1.5em;
     }
 
-    .basics li{
+    .basics >.list-item, .basics li{
         padding: 0.3em;
     }
 }
@@ -723,7 +735,7 @@ s
  
     }
 
-    .basics li{
+    .basics >.list-item, .basics li{
         padding: 0 1.5em;
         width: 99%;
         margin-bottom: 5%;
@@ -734,7 +746,7 @@ s
         /* padding: 10% 1.5em 0 1.5em; */
     }
 
-    .basics li, .members li{
+    .basics >.list-item, .basics li, .members li{
         width: 99%;
 
         z-index: 1000;
@@ -759,7 +771,7 @@ s
 }
     
 
-    .remote-article h1{
+    .remote-article h1, h2{
         font-size: 3em;
     }
 
@@ -792,7 +804,7 @@ s
 }
 
 @media only screen and (max-width:600px){
-    .remote-article h1 {
+    .remote-article h1, h2 {
         font-size: 2.3em;
     }
 
@@ -805,7 +817,7 @@ s
 
 
 @media only screen and (max-width:500px){
-    .remote-article h1{
+    .remote-article h1, h2{
         font-size: 2em;
     }
 
@@ -832,7 +844,7 @@ s
         height: 3px;
     }
 
-    .remote-article h1 {
+    .remote-article h1, h2 {
         font-size: 1.4em;
     }
 }
