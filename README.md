@@ -5,3 +5,6 @@ Technologies/methods used:
     - CSS 
     - HTML
     - Flex
+    
+    Live page: 
+        - https://jack-intro.netlify.app/
